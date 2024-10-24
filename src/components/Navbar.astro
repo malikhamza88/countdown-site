@@ -1,0 +1,37 @@
+---
+---
+<header class="fixed w-full z-50">
+  <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <a href="/" class="flex items-center gap-2 hover:opacity-90 transition-opacity">
+        <img src="/logo.svg" alt="CountdownChrono Logo" class="w-8 h-8" />
+        <span class="text-xl font-bold bg-gradient-to-r from-primary-500 to-primary-400 bg-clip-text text-transparent">
+          CountdownChrono
+        </span>
+      </a>
+    </div>
+
+    <div class="hidden md:flex items-center gap-8">
+      <a
+        href="#features"
+        class="text-primary-500 hover:text-primary-400 transition-colors font-medium"
+      >
+        Features
+      </a>
+      <a
+        href="#download"
+        class="bg-primary-600 text-white px-6 py-2 rounded-full font-medium hover:bg-primary-700 transition-colors"
+      >
+        Download Now
+      </a>
+    </div>
+  </nav>
+</header>
+
+<style>
+  /* Add a subtle blur effect when scrolling */
+  header {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+</style>
