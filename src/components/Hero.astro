@@ -1,5 +1,8 @@
 ---
 import { Image } from 'astro:assets';
+import appPreviewLeft from '../../images/app-preview-left.png';
+import appPreviewCenter from '../../images/app-preview-center.png';
+import appPreviewRight from '../../images/app-preview-right.png';
 ---
 
 <section class="pt-32 pb-20 bg-gradient-to-b from-primary-50 to-white dark:from-primary-900 dark:to-primary-800">
@@ -8,15 +11,13 @@ import { Image } from 'astro:assets';
       <h1 class="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary-600 to-primary-400 bg-clip-text text-transparent">
         Track Every Moment That Matters
       </h1>
-
       <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
         Transform your countdown experience with CountdownChrono - the ultimate event tracking app
         that helps you celebrate every moment and achieve your goals with style!
       </p>
-
       <!-- TODO: Replace # with your App Store link -->
       <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-        <a
+
           href="#"
           class="bg-gradient-to-r from-primary-600 to-primary-400 text-white px-8 py-4 rounded-full font-medium hover:opacity-90 transition-opacity flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200"
         >
@@ -26,39 +27,23 @@ import { Image } from 'astro:assets';
           Download on App Store
         </a>
       </div>
-
       <!-- App Preview Section -->
       <div class="relative mt-20 mb-10">
         <!-- Gradient overlays -->
         <div class="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent dark:from-primary-900 pointer-events-none"></div>
         <div class="absolute -inset-x-20 top-0 bg-gradient-to-r from-white via-transparent to-white dark:from-primary-900 dark:to-primary-900 pointer-events-none"></div>
-
         <div class="flex justify-center items-end gap-4 md:gap-8">
           <!-- Left Screenshot -->
           <div class="w-48 md:w-64 transform -rotate-12 translate-y-4 float">
-            <img
-              src="images/app-preview-left.png"
-              alt="CountdownChrono App Preview"
-              class="rounded-[32px] shadow-2xl"
-            />
+            <Image src={appPreviewLeft} alt="CountdownChrono App Preview" class="rounded-[32px] shadow-2xl" />
           </div>
-
           <!-- Center Screenshot -->
           <div class="w-56 md:w-72 z-10 float" style="animation-delay: 0.2s;">
-            <img
-              src="/images/app-preview-center.png"
-              alt="CountdownChrono App Preview"
-              class="rounded-[40px] shadow-2xl"
-            />
+            <Image src={appPreviewCenter} alt="CountdownChrono App Preview" class="rounded-[40px] shadow-2xl" />
           </div>
-
           <!-- Right Screenshot -->
           <div class="w-48 md:w-64 transform rotate-12 translate-y-4 float" style="animation-delay: 0.4s;">
-            <img
-              src="/images/app-preview-right.png"
-              alt="CountdownChrono App Preview"
-              class="rounded-[32px] shadow-2xl"
-            />
+            <Image src={appPreviewRight} alt="CountdownChrono App Preview" class="rounded-[32px] shadow-2xl" />
           </div>
         </div>
       </div>
