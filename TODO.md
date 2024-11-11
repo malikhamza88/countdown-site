@@ -25,14 +25,6 @@ Add your app screenshots to `public/images/`:
 - [ ] Add center preview: `app-preview-center.png`
 - [ ] Add right preview: `app-preview-right.png`
 
-### Legal & Policy Content
-- [ ] Review and customize Privacy Policy content
-- [ ] Review and customize Terms & Conditions content
-- [ ] Add data collection details to Privacy Policy
-- [ ] Add specific app usage terms to Terms & Conditions
-- [ ] Add GDPR compliance information (if applicable)
-- [ ] Add CCPA compliance information (if applicable)
-
 ## SEO & Meta Information
 - [ ] Create and add Open Graph image: `public/images/og-image.jpg` (1200x630px)
 - [ ] Create and add Twitter card image: `public/images/twitter-card.jpg` (1200x600px)
@@ -40,7 +32,6 @@ Add your app screenshots to `public/images/`:
 - [ ] Update page titles for all pages
 - [ ] Add proper alt text to all images
 
-## Technical Optimizations
 
 ### Image Optimization
 - [ ] Optimize all images for web use
